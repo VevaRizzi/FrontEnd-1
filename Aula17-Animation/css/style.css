@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  button {
+    margin: 50px;
+    border: 0;
+    border-radius: 3px;
+    padding: 15px;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 500;
+    background-color: #ffd102;
+    color: #000;
+    
+  
+    transition:
+      background-color, 1s,
+      color, s;
+  }
+  
+  button:hover {
+    background-color: rgb(12, 179, 190);
+    color: #fff
+  }
+  
+  div{
+    background-color: rgb(12, 179, 190);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  div:hover{
+    background-color:  white;
+    color: rgb(12, 179, 190);
+    animation-direction: alternate; 
+    opacity: .8;
+  }
+  
+  img {
+    width: 350px;
+    animation: skew 7s infinite;
+    transform: scale(0.5) rotate(50deg)
+  }
+  
+  img:hover{
+    animation: deslizar 5s normal;
+    
+  }
+  
+  @keyframes deslizar {
+    0% { opacity: 0%; }
+    50% { opacity: 100%; transform: translateX(400px) rotate(180deg);border-radius: 60%;}
+    100% { opacity: 0%; transform: scale(1.5)}
+  }
+  
